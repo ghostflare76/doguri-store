@@ -40,12 +40,12 @@ const games = [
     preview: true
   },
   {
-    title: "TCG Game Mockup",
-    url: "https://gnsyoo.github.io/tcg-game-mockup/",
-    description: "카드 배틀 UI와 흐름을 시험해볼 수 있는 TCG 목업입니다.",
+    title: "삼국지 카드 게임",
+    url: "https://gnsyoo.github.io/tkh-tcg/",
+    description: "장수 카드를 모아 덱을 꾸리고, 턴제 전투와 레이드, 보드 카드 대전을 즐기는 삼국지 테마 TCG입니다.",
     category: "Card",
-    status: "prototype",
-    tags: ["TCG", "카드", "목업"],
+    status: "playable",
+    tags: ["삼국지", "TCG", "전략"],
     accent: "#a982ff",
     preview: true
   },
