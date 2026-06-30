@@ -51,7 +51,7 @@ const games = [
   },
   {
     title: "도구리 배구",
-    url: "https://op-assets.ncsoft.com/static-test/doguri/index.html",
+    url: "https://ghostflare76.github.io/doguri/",
     description: "추억의 피카추 배구를 오마주한 도구리 테마의 캐주얼 배구 게임입니다.",
     category: "Casual",
     status: "playable",
