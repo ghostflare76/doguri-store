@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doguri Game Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="store-header">
+        <nav class="top-bar" aria-label="스토어 메뉴">
+          <a class="brand" href="#" aria-label="Doguri Game Store 홈">
+            <span class="brand-mark" aria-hidden="true">D</span>
+            <span>
+              <strong>Doguri</strong>
+              <small>Game Store</small>
+            </span>
+          </a>
+          <div class="nav-actions" aria-label="스토어 상태">
+            <span class="pill">사내 게임</span>
+            <span class="pill pill-strong" id="gameCount">6 games</span>
+          </div>
+        </nav>
+
+        <section class="hero" aria-labelledby="pageTitle">
+          <div class="hero-copy">
+            <p class="eyebrow">Arcade Grid</p>
+            <h1 id="pageTitle">오늘은 어떤 게임을 플레이할까요?</h1>
+            <p>
+              사내 개발자들이 만든 웹게임을 한 화면에서 훑고, 마음에 드는
+              게임으로 바로 진입하세요.
+            </p>
+          </div>
+          <div class="hero-panel" aria-label="추천 플레이">
+            <span class="panel-label">NOW PLAYING</span>
+            <strong id="featuredTitle">Doguri Dungeon</strong>
+            <a id="featuredLink" class="hero-play" href="#" target="_blank" rel="noreferrer">
+              바로 플레이
+            </a>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="toolbar" aria-label="게임 찾기">
+          <label class="search-box">
+            <span>검색</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="게임 이름, 태그, 소개 검색"
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="filter-group" aria-label="상태 필터">
+            <button class="filter-chip active" type="button" data-status="all">전체</button>
+            <button class="filter-chip" type="button" data-status="playable">플레이 가능</button>
+            <button class="filter-chip" type="button" data-status="prototype">프로토타입</button>
+          </div>
+
+          <label class="select-box">
+            <span>장르</span>
+            <select id="categorySelect">
+              <option value="all">전체 장르</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="content-head">
+          <div>
+            <p class="eyebrow">Library</p>
+            <h2>게임 목록</h2>
+          </div>
+          <p id="resultSummary" class="summary">6개의 게임이 준비되어 있습니다.</p>
+        </section>
+
+        <section id="gameGrid" class="game-grid" aria-live="polite"></section>
+        <section id="emptyState" class="empty-state" hidden>
+          <strong>조건에 맞는 게임이 없습니다.</strong>
+          <p>검색어를 줄이거나 필터를 전체로 바꿔보세요.</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
