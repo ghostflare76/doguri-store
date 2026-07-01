@@ -58,6 +58,16 @@ const games = [
     tags: ["도구리", "배구", "오마주"],
     accent: "#ff70a6",
     preview: true
+  },
+  {
+    title: "Run N Jump",
+    url: "https://runnjump.vercel.app/",
+    description: "Three.js와 TypeScript로 직접 구현한 물리 로직, Tone.js 사운드 합성, 실시간 튜닝 UI를 실험한 3D 하드코어 점프 게임 프로토타입입니다.",
+    category: "Platformer",
+    status: "prototype",
+    tags: ["Three.js", "3D", "점프"],
+    accent: "#2f80ed",
+    preview: true
   }
 ];
 
