@@ -1,5 +1,15 @@
 const games = [
   {
+    title: "도구리 하와이 댄스",
+    url: "https://citrusade.github.io/Doguri_dance/",
+    description: "화살표 키를 맞춰 누르며 하와이에서 춤추는 도구리 리듬 게임입니다. 스테이지를 클리어하고 기념 도감을 모아보세요.",
+    category: "Rhythm",
+    status: "playable",
+    tags: ["도구리", "하와이", "리듬"],
+    accent: "#58d68d",
+    preview: true
+  },
+  {
     title: "Doguri Dungeon",
     url: "https://cheyminho.github.io/doguri_dungeon/",
     description: "던전을 탐험하며 앞으로 나아가는 도구리 어드벤처 게임입니다.",
@@ -195,7 +205,7 @@ function bindEvents() {
 }
 
 function initializeFeaturedGame() {
-  const featuredGame = games[0];
+  const featuredGame = games[Math.floor(Math.random() * games.length)];
   featuredTitle.textContent = featuredGame.title;
   featuredLink.href = featuredGame.url;
   gameCount.textContent = `${games.length} games`;
