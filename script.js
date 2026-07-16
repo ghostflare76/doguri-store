@@ -1,5 +1,25 @@
 const games = [
   {
+    title: "명탐정 도구리",
+    url: "https://cheyminho.github.io/doguri_detective/",
+    description: "겨울 산장 살인 사건의 현장을 조사하고 증거를 모아 범인을 추리하는 도구리 탐정 게임입니다.",
+    category: "Mystery",
+    status: "playable",
+    tags: ["도구리", "추리", "탐정"],
+    accent: "#c9a15e",
+    preview: true
+  },
+  {
+    title: "Doguri's Adventure",
+    url: "https://citrusade.github.io/Doguri_Rpg_Go/",
+    description: "스킬과 무기, 유물을 조합해 몬스터와 싸우는 턴제 전투 기반의 도구리 RPG입니다. 난이도를 골라 도전해보세요.",
+    category: "RPG",
+    status: "playable",
+    tags: ["도구리", "RPG", "턴제"],
+    accent: "#ef5350",
+    preview: true
+  },
+  {
     title: "도구리 하와이 댄스",
     url: "https://citrusade.github.io/Doguri_dance/",
     description: "화살표 키를 맞춰 누르며 하와이에서 춤추는 도구리 리듬 게임입니다. 스테이지를 클리어하고 기념 도감을 모아보세요.",
